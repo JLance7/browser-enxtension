@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pocket Shelf</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">YOUR READING QUEUE</p>
+    <h1>Pocket Shelf</h1>
+    <button id="save" type="button" disabled>Save current page</button>
+    <p id="status" role="status"></p>
+  </header>
+  <main>
+    <label for="search">Search your shelf</label>
+    <input id="search" type="search" placeholder="Page title or address" autocomplete="off">
+    <div class="views" role="group" aria-label="Reading status">
+      <button id="queue" type="button" aria-pressed="true">To read <span id="queue-count">0</span></button>
+      <button id="archive" type="button" aria-pressed="false">Archived <span id="archive-count">0</span></button>
+    </div>
+    <ul id="links" aria-label="Saved pages"></ul>
+    <p id="empty" class="empty" hidden></p>
+  </main>
+</body>
+</html>

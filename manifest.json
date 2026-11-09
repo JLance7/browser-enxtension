@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Pocket Shelf",
+  "version": "1.0.0",
+  "description": "Save the current page to a searchable reading queue.",
+  "permissions": ["activeTab", "storage"],
+  "icons": {
+    "16": "icons/shelf16.png",
+    "32": "icons/shelf32.png",
+    "48": "icons/shelf48.png",
+    "128": "icons/shelf128.png"
+  },
+  "action": {
+    "default_title": "Pocket Shelf",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/shelf16.png",
+      "32": "icons/shelf32.png"
+    }
+  }
+}
